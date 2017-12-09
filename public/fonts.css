@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "NerisSemiBold";
+    src: url("fonts/neris-semibold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "NerisLight";
+    src: url("fonts/neris-light.otf") format("opentype");
+}

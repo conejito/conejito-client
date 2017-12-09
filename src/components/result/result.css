@@ -1,0 +1,43 @@
+.answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 2rem;
+  padding-top: 0.3rem;
+}
+
+.answer .conejito {
+  width: 10rem;
+}
+
+.answer p {
+  font-size: 1.4rem;
+  text-align: left;
+  min-height: 3rem;
+  margin-left: 1.5rem;
+  width: 100%;
+}
+
+.result {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.result p {
+  text-align: left;
+  margin: 0 2rem 0.5rem;
+  font-size: 1.4rem;
+}
+
+.result .address {
+  color: #666;
+  font-family: "NerisLight", sans-serif;
+  margin-bottom: 0;
+}
+
+.result .name {
+  font-size: 1.8rem;
+}

@@ -1,0 +1,31 @@
+.loadingOverlay {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  animation-name: fade-out;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+.loadingOverlay p {
+  font-size: 2.4rem;
+}
+
+@keyframes fade-out {
+    85% {
+      opacity: 1;
+    }
+    99% {
+      z-index: auto;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+}

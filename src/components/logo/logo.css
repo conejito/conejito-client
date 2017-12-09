@@ -1,0 +1,23 @@
+.logo-wrapper {
+  text-align: center;
+}
+
+.logo-wrapper.small {
+  padding: 1rem 0 1.5rem;
+}
+
+.logo-wrapper.big {
+  padding: 2rem 0 3.6rem;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.small .logo {
+  width: 10rem;
+}
+
+.big .logo {
+  width: 16rem;
+}

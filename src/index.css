@@ -1,0 +1,28 @@
+:root {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+input {
+  font-family: inherit;
+  border: none;
+  padding-bottom: 0.1em;
+}
+
+input:focus {
+  outline: none;
+}

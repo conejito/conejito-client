@@ -1,0 +1,32 @@
+.map .button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1.5rem 0.5rem;
+}
+
+.map .button {
+  padding: 1rem 0.5rem;
+  color: #666;
+  background: transparent;
+}
+
+.map .icon {
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+
+.map-wrapper-hidden,
+.map-wrapper-expanded {
+  overflow: hidden;
+}
+
+.map-wrapper-hidden {
+  height: 0;
+  transition: height 0.3s ease-out;
+}
+
+
+.map-wrapper-expanded {
+  height: 15rem;
+  transition: height 0.3s ease-out;
+}

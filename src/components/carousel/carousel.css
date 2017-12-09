@@ -1,0 +1,44 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.carousel {
+  margin-bottom: 6rem;
+  font-family: "NerisLight", sans-serif;
+  font-size: 1.6rem;
+}
+
+.carousel h3 {
+  font-size: 2rem;
+}
+
+.carousel h3,
+.carousel p {
+  margin: 0.5em 0;
+}
+
+.slick-slider {
+  padding-bottom: 1.5rem;
+}
+
+.carousel .slick-dots li {
+  margin: 0 1.5rem;
+}
+
+.carousel .slick-dots li button {
+  background: white;
+  border: 2px solid #d03140;
+  border-radius: 50%
+}
+
+.carousel .slick-dots li.slick-active button {
+  background: #d03140;
+}
+
+.carousel .slick-dots li button:before {
+  display: none;
+}
+
+.slick-next,
+.slick-prev {
+  display: none;
+}
