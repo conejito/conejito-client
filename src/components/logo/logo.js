@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './logo.css';
 import logo from './logo.png';
 
 
 const Logo = (props) => (
   <div className={props.variant + ' logo-wrapper'}>
-    <img src={logo} className='logo' />
+    <img src={logo} className='logo' alt="logo" />
   </div>
 );
 

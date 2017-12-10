@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './result.css';
-import restaurant from './restaurant.svg';
+//import restaurant from './restaurant.svg';
 import Conejito from '../../components/conejito/conejito';
-import Map from '../../components/map/map';
-import Rating from '../../components/rating/rating';
+// import Map from '../../components/map/map';
+// import Rating from '../../components/rating/rating';
 
 const Result = (props) => (
   <div>
-    {
+    <div className="answer">
+      <Conejito />
+      <p>{props.info.text}</p>
+    </div>
+    {/* {
       props.info.type === 'answer'
       ?
         <div className="answer">
@@ -21,7 +25,7 @@ const Result = (props) => (
           <p className='address'>{props.info.data.address}</p>
           <Map lat={props.info.data.location.lat} lng={props.info.data.location.lng}/>
         </div>
-    }
+    } */}
   </div>
 );
 

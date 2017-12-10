@@ -1,37 +1,16 @@
 import React, { Component } from 'react';
 import './chatField.css';
-import mic from './mic.svg';
+// import mic from './mic.svg';
 
 class ChatField extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      question: this.props.question
-    };
-
-    this.handleInput = this.handleInput.bind(this);
-    this.handleKeyPress = this.handleKeyPress.bind(this);
-    this.handleFocus = this.handleFocus.bind(this);
-  }
-
-  handleInput(event) {
-    this.setState({
-      question: event.target.value
-    });
-    this.props.setQuestion(event.target.value);
-  }
-
-  handleKeyPress(event) {
-    if (event.key === 'Enter' && this.state.question !== '') {
-      this.props.setSearching(true);
-      this.props.setQuestion(this.state.question);
-      this.props.getData();
+  handleKeyPress = (event) => {
+    if (event.key === 'Enter' && this.refs.input.value) {
+      this.props.onSubmit( this.refs.input.value );
       this.refs.input.blur();
     }
   }
 
-  handleFocus() {
+  handleFocus = () => {
     this.refs.input.select();
   }
 
@@ -43,8 +22,6 @@ class ChatField extends Component {
                  placeholder="Masz jakieś pytanie?"
                  type="text"
                  name="question"
-                 value={this.state.question}
-                 onChange={this.handleInput}
                  onKeyPress={this.handleKeyPress}
                  onFocus={this.handleFocus}
                  ref='input' />

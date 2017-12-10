@@ -45,6 +45,7 @@ class Map extends Component {
           </button>
           <img className='icon'
                src={this.state.expanded ? less : more}
+               alt="icon"
                onClick={this.handleExpanding} />
         </div>
         <div className={this.state.expanded ? "map-wrapper-expanded" : "map-wrapper-hidden"}>

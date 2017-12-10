@@ -41,7 +41,7 @@ class Conejito extends Component {
   render() {
     return (
       <div className='conejito-wrapper'>
-        <img src={this.img} className='conejito' />
+        <img src={this.img} className='conejito' alt="conejito" />
       </div>
     );
   }
